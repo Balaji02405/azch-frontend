@@ -4,7 +4,7 @@
 # https://docs.microsoft.com/azure/devops/pipelines/languages/docker
 variables:
   
-  - group: frontend-variables # Variable Group containing 'mongoHost', 'mongoUser' and the secret 'mongoPassword'
+  #- group: frontend-variables # Variable Group containing 'mongoHost', 'mongoUser' and the secret 'mongoPassword'
 
   - name: dockerRegistryServiceConnection
     value: 'containerRegistryConnection' # make sure it matches the name you used in the service connection
