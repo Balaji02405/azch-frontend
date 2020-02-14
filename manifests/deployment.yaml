@@ -14,7 +14,7 @@ spec:
       spec:
         containers:
         - name: frontend
-          image:  aksworksconreg.azurecr.io/cj3
+          image:  aksworksconreg.azurecr.io/frontend:cj3
           imagePullPolicy: Always
           readinessProbe:
             httpGet:
