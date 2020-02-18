@@ -14,7 +14,7 @@ spec:
       spec:
         containers:
         - name: frontend
-          image:  aksworksconreg.azurecr.io/frontend:cj3
+          image:  aksappsonreg.azurecr.io/frontend:ce1
           imagePullPolicy: Always
           readinessProbe:
             httpGet:
@@ -33,6 +33,6 @@ spec:
               cpu: "500m"
           env:
           - name: CAPTUREORDERSERVICEIP
-            value: "13.86.56.124" # Replace with your captureorder service IP
+            value: "52.155.119.31" # Replace with your captureorder service IP
           ports:
           - containerPort: 8080
