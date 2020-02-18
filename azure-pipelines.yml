@@ -10,7 +10,7 @@ variables:
     value: 'containerRegistryConnection' # make sure it matches the name you used in the service connection
   
   - name: acrEndpoint
-    value: 'aksworksconreg.azurecr.io' # replace with container registry endpoint
+    value: 'aksappsonreg.azurecr.io' # replace with container registry endpoint
 
   - name: tag
     value: '$(Build.BuildId)'
@@ -44,7 +44,7 @@ stages:
 
   variables:
   - name: k8sNamespace # Kubernetes Namespace to deploy to. This variable is scoped to the DeployDev stage.
-    value: 'dev2'
+    value: 'dev'
       
   jobs:
   - deployment: DeployDev
@@ -52,7 +52,7 @@ stages:
     pool:
       vmImage: ubuntu-latest
 
-    environment: 'aksworkshop1.dev2' # name of the environment to target [env name.namespace]. This will pull in the Kubernetes service connection automatically
+    environment: 'aksworkshop.dev' # name of the environment to target [env name.namespace]. This will pull in the Kubernetes service connection automatically
 
     strategy:
       runOnce:
