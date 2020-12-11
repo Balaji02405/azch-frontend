@@ -11,7 +11,7 @@ A containerised Express/NodeJS app that periodically queries the Order Capture A
 
 The following environment variables need to be passed to the container:
 
-### Capture Order Service IP
+### Capture Order Service IP..
 
 ```
 ENV CAPTUREORDERSERVICEIP=<public IP/hostname of capture order service>
