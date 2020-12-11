@@ -5,7 +5,7 @@
 
 A containerised Express/NodeJS app that periodically queries the Order Capture API to retrieve the total number of orders.
 
-## Usage
+## Usage..
 
 ## Environment Variables
 
